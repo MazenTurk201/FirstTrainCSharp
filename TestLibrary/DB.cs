@@ -1,58 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Runtime.CompilerServices;
 
 namespace TestLibrary
 {
     public static class DB
     {
-        private static readonly List<string> _userName = new();
-        private static readonly List<string> _password = new();
-        private static readonly List<double> _amount = new();
-        private const string _key = "12345678901234567890123456789012"; // 32 chars for AES-256
+        private static readonly List<User> _users = [
+            new User("user1", "password1"),
+            new User("user2", "password2"),
+            new User("user3", "password3"),
+            ];
 
-        public static void AddUser(string userName, string password, double Amount)
+        public static void AddUser(User user)
         {
-            _userName.Add(userName);
-            _password.Add(SimpleAesHelperBase.Encrypt(password, _key));
-            _amount.Add(Amount);
+            _users.Add(user);
         }
 
-        public static double getAmount(string userName, string password)
+        public static double getAmount(User user)
         {
-            IsUser(userName, password);
-            int idx = _userName.IndexOf(userName);
-            return _amount[idx];
+            User fromUser = FindUserInList(user.userName);
+            return fromUser.amount;
         }
-        public static void setAmount(string fromUserName, string fromPassword, string toUserName, double amount)
+        public static void setAmount(User user, User toUserName, double amount)
         {
-            if (amount <= 0)
+            User fromUser = FindUserInList(user.userName);
+            User toUser = FindUserInList(toUserName.userName);
+            if (amount <= 0 && fromUser.amount < amount)
             {
                 throw new ArgumentException("Amount must be greater than zero.");
             }
-            int fromIdx = _userName.IndexOf(fromUserName);
-            int toIdx = _userName.IndexOf(toUserName);
-            _amount[fromIdx] = amount;
-            _amount[toIdx] += amount;
+            fromUser.amount = amount;
+            toUser.amount += amount;
         }
-        public static void setAmount(string userName, string password, double amount)
+        public static void setAmount(User user, double amount)
         {
+            User fromUser = FindUserInList(user.userName);
             if (amount < 0)
             {
                 throw new ArgumentException("Amount cannot be negative.");
             }
-            int idx = _userName.IndexOf(userName);
-            _amount[idx] += amount;
+            fromUser.amount += amount;
         }
-        public static void Withdraw(string userName, string password, double amount)
+        public static void Withdraw(User user, double amount)
         {
+            User fromUser = FindUserInList(user.userName);
             if (amount <= 0)
             {
                 throw new ArgumentException("Amount must be greater than zero.");
             }
-            int idx = _userName.IndexOf(userName);
-            if (_amount[idx] >= amount)
+            if (fromUser.amount >= amount)
             {
-                _amount[idx] -= amount;
+                fromUser.amount -= amount;
             }
             else
             {
@@ -60,26 +60,50 @@ namespace TestLibrary
             }
         }
 
-        public static bool IsUser(string userName, string password)
+        private static User FindUserInList(string userName)
         {
-            for (int i = 0; i < _userName.Count; i++)
+            User findUser = _users.Find(u => u.userName == userName)!;
+            if (findUser != null)
             {
-                if (_userName[i] == userName && _password[i] == SimpleAesHelperBase.Encrypt(password, _key))
-                {
-                    return true;
-                }
+                return findUser;
             }
-
-            return false;
+            else
+            {
+                throw new ArgumentException($"User with username '{userName}' not found.");
+            }
         }
-
+        public static User FindUserAndPasswordInList(string userName, string password)
+        {
+            User findUser = _users.Find(u => u.userName == userName && u.password == password)!;
+            if (findUser != null)
+            {
+                return findUser;
+            }
+            else
+            {
+                throw new ArgumentException($"Invalid username or password for user '{userName}'.");
+            }
+        }
         public static void LeakeData()
         {
             Console.WriteLine("All Users:");
-            for (int i = 0; i < _userName.Count; i++)
+            var users = from user in User.GetUsers()
+                        //where user.amount == 0
+                        select new
+                        {
+                            AccountUser = user.userName,
+                            AccountAmount = user.amount,
+                            AccountPassword = user.password
+                        };
+            foreach (var item in users)
             {
-                Console.WriteLine($"User: {_userName[i]}, Password: {_password[i]}, Amount: {_amount[i]}");
+                Console.WriteLine(item.ToString());
             }
+        }
+
+        public static List<User> GetUsers()
+        {
+            return _users;
         }
     }
 }
