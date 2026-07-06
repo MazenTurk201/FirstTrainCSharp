@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FullStack\\FirstTrain\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BEF58E74-9439-23AC-3AC1-4B31F9DE9CAB}|TestConsole\\TestConsole.csproj|d:\\fullstack\\firsttrain\\testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEF58E74-9439-23AC-3AC1-4B31F9DE9CAB}|TestConsole\\TestConsole.csproj|solutionrelative:testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B3D8B09-5EEB-EC58-D5FF-4D96C3A383C6}|TestLibrary\\TestLibrary.csproj|d:\\fullstack\\firsttrain\\testlibrary\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B3D8B09-5EEB-EC58-D5FF-4D96C3A383C6}|TestLibrary\\TestLibrary.csproj|solutionrelative:testlibrary\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B3D8B09-5EEB-EC58-D5FF-4D96C3A383C6}|TestLibrary\\TestLibrary.csproj|d:\\fullstack\\firsttrain\\testlibrary\\atm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B3D8B09-5EEB-EC58-D5FF-4D96C3A383C6}|TestLibrary\\TestLibrary.csproj|solutionrelative:testlibrary\\atm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B3D8B09-5EEB-EC58-D5FF-4D96C3A383C6}|TestLibrary\\TestLibrary.csproj|d:\\fullstack\\firsttrain\\testlibrary\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B3D8B09-5EEB-EC58-D5FF-4D96C3A383C6}|TestLibrary\\TestLibrary.csproj|solutionrelative:testlibrary\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\FullStack\\FirstTrain\\TestLibrary\\User.cs",
+              "RelativeDocumentMoniker": "TestLibrary\\User.cs",
+              "ToolTip": "D:\\FullStack\\FirstTrain\\TestLibrary\\User.cs",
+              "RelativeToolTip": "TestLibrary\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T21:05:47.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ATM.cs",
+              "DocumentMoniker": "D:\\FullStack\\FirstTrain\\TestLibrary\\ATM.cs",
+              "RelativeDocumentMoniker": "TestLibrary\\ATM.cs",
+              "ToolTip": "D:\\FullStack\\FirstTrain\\TestLibrary\\ATM.cs",
+              "RelativeToolTip": "TestLibrary\\ATM.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T21:05:36.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DB.cs",
+              "DocumentMoniker": "D:\\FullStack\\FirstTrain\\TestLibrary\\DB.cs",
+              "RelativeDocumentMoniker": "TestLibrary\\DB.cs",
+              "ToolTip": "D:\\FullStack\\FirstTrain\\TestLibrary\\DB.cs",
+              "RelativeToolTip": "TestLibrary\\DB.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAmwEsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T15:11:50.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FullStack\\FirstTrain\\TestConsole\\Program.cs",
+              "RelativeDocumentMoniker": "TestConsole\\Program.cs",
+              "ToolTip": "D:\\FullStack\\FirstTrain\\TestConsole\\Program.cs",
+              "RelativeToolTip": "TestConsole\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T14:19:23.747Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

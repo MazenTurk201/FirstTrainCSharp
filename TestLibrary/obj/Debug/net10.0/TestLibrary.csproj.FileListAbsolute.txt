@@ -1,0 +1,11 @@
+D:\FullStack\FirstTrain\TestLibrary\bin\Debug\net10.0\TestLibrary.deps.json
+D:\FullStack\FirstTrain\TestLibrary\bin\Debug\net10.0\TestLibrary.dll
+D:\FullStack\FirstTrain\TestLibrary\bin\Debug\net10.0\TestLibrary.pdb
+D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\TestLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\TestLibrary.AssemblyInfoInputs.cache
+D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\TestLibrary.AssemblyInfo.cs
+D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\TestLibrary.csproj.CoreCompileInputs.cache
+D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\TestLibrary.dll
+D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\refint\TestLibrary.dll
+D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\TestLibrary.pdb
+D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\ref\TestLibrary.dll
