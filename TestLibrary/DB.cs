@@ -78,7 +78,7 @@ namespace TestLibrary
             Console.WriteLine("All Users:");
             for (int i = 0; i < _userName.Count; i++)
             {
-                Console.WriteLine($"User: {_userName[i]}, Amount: {_amount[i]}");
+                Console.WriteLine($"User: {_userName[i]}, Password: {_password[i]}, Amount: {_amount[i]}");
             }
         }
     }

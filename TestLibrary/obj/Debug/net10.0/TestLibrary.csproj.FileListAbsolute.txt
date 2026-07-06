@@ -9,3 +9,4 @@ D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\TestLibrary.dll
 D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\refint\TestLibrary.dll
 D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\TestLibrary.pdb
 D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\ref\TestLibrary.dll
+D:\FullStack\FirstTrain\TestLibrary\obj\Debug\net10.0\TestLibrary.sourcelink.json

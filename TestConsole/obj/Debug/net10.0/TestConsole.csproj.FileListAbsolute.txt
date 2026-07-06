@@ -16,3 +16,4 @@ D:\FullStack\FirstTrain\TestConsole\obj\Debug\net10.0\refint\TestConsole.dll
 D:\FullStack\FirstTrain\TestConsole\obj\Debug\net10.0\TestConsole.pdb
 D:\FullStack\FirstTrain\TestConsole\obj\Debug\net10.0\TestConsole.genruntimeconfig.cache
 D:\FullStack\FirstTrain\TestConsole\obj\Debug\net10.0\ref\TestConsole.dll
+D:\FullStack\FirstTrain\TestConsole\obj\Debug\net10.0\TestConsole.sourcelink.json
