@@ -1,3 +1,20 @@
-.vs/ 
-[Bb]in/ 
-[Oo]bj/ 
+## Visual Studio Cache and Settings
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vsidx/
+
+## Build Outputs (اقفل فولديرات الـ Compiled code)
+[Bb]in/
+[Oo]bj/
+
+## Visual Studio Code
+.vscode/
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache

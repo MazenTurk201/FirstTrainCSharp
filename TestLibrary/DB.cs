@@ -62,6 +62,9 @@ namespace TestLibrary
 
         private static User FindUserInList(string userName)
         {
+            //User findUser = (from u in _users
+            //                 where u.userName == userName
+            //                 select u).FirstOrDefault()!;
             User findUser = _users.Find(u => u.userName == userName)!;
             if (findUser != null)
             {

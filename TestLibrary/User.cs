@@ -4,7 +4,12 @@
     {
         public string userName { get; set; } = string.Empty;
         public string password { get; set; } = string.Empty;
-        public double amount { get; set; } = 0.0;
+        public double amount { get; set {
+                if (amount < 0)
+                {
+                    throw new ArgumentException("Amount cannot be negative.");
+                }
+            } } = 0.0;
 
         public User(string userName, string password)
         {
